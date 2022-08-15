@@ -33,6 +33,8 @@ function lista() {
     }
     document.querySelector("#contenedor").append(listado);
     listado.className = "centrado";
+    const conteiner = document.querySelector("#contenedor");
+    conteiner.className = "contenedor";
     let conf = confirm("Desea agregar otra tarea?");
     if (conf === true) {
         ingresarTarea();
