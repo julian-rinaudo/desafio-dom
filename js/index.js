@@ -12,7 +12,7 @@ let nombre = ingreseNombre();
 
 const saludo = document.createElement("h2");
 saludo.innerText = `HOLA ${nombre}`;
-document.querySelector(".contenedor").append(saludo);
+document.querySelector("#contenedor").append(saludo);
                                     /*Nombre del usuario*/
 
 debugger
@@ -31,7 +31,7 @@ function lista() {
     for (const tarea of tareas) {
         listado.innerHTML = `<li>${tarea}</li>`;
     }
-    document.querySelector(".contenedor").append(listado);
+    document.querySelector("#contenedor").append(listado);
     listado.className = "centrado";
     let conf = confirm("Desea agregar otra tarea?");
     if (conf === true) {
